@@ -1,1 +1,476 @@
-/* место для вашего кода */
+* {
+  list-style: none;
+}
+
+.header {
+  background-color: white;
+  width: 100%;
+  max-width: 1340px;
+  margin: auto;
+  margin-top: 92px;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul li {
+  display: inline-block;
+}
+
+.header-links-list {
+  align-self: center;
+}
+
+.header__link {
+  font-size: 18px;
+  line-height: normal;
+  font-family: "Raleway", "sans-serif";
+}
+
+.header-in-activ {
+  display: list-item;
+  list-style: circle outside;
+}
+
+.no-bullit {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.header__links-list-item_no-bullit {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.header__links-list-item {
+  padding-right: 32px;
+  list-style-type: circle;
+}
+
+.adress {
+  font-size: 18px;
+  line-height: normal;
+  font-family: "Raleway", "sans-serif";
+  padding-right: 49px;
+}
+
+.header__address {
+  padding-right: 20px;
+  display: flex;
+  line-height: 24.3px;
+  flex-direction: column;
+  align-self: center;
+}
+
+.header__logo-image {
+  margin-right: 200px;
+  display: flex;
+  width: 148px;
+  height: 105px;
+}
+
+.content {
+  margin-top: 96px;
+}
+
+.cover {
+  background-image: url("/Users/Fed/dev/ono-tebe-nado/images/cover.jpg");
+  background-size: cover;
+  width: 100%;
+  min-height: 757px;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.overlay-container {
+  width: 100%;
+  min-height: 757px;
+  max-width: 1440px;
+  background-color: rgb(0 0 0/0.6);
+  z-index: 1;
+  margin: auto;
+}
+
+.cover-title {
+  display: flex;
+  flex-direction: column;
+  padding-top: 165px;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 100%;
+  min-height: 355px;
+}
+
+.aligned-text {
+  color: white;
+  font-family: Raleway;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 30px;
+  text-transform: uppercase;
+  display: flex;
+}
+
+.letter-spacing-extended {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115px;
+  letter-spacing: 60px;
+  text-transform: uppercase;
+}
+
+.aligned-text_center {
+  margin-top: 20px;
+  color: white;
+  font-family: Raleway;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100px;
+  letter-spacing: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-right: 32px;
+}
+
+.letter-spacing-center {
+  padding-left: 30px;
+}
+
+.aligned-text_right {
+  margin-top: 20px;
+  text-align: right;
+  margin-right: -10px;
+  letter-spacing: 60px;
+  color: white;
+  font-family: Raleway;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100px;
+  letter-spacing: 30px;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.aligned-text-letter-spacing {
+  margin-right: -23px;
+}
+
+.letter-spacing-right {
+  letter-spacing: 21px;
+  text-transform: uppercase;
+  margin-right: -37px;
+}
+
+.no-letter-spacing {
+  letter-spacing: 30px;
+  text-transform: uppercase;
+  margin-right: -20px;
+}
+
+.cover__description {
+  margin-top: 133px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+}
+
+.cover__description-text {
+  color: white;
+  font-family: Raleway;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: uppercase;
+  display: flex;
+  word-spacing: 18px;
+}
+
+.bet-button {
+  width: 257px;
+  height: 52px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  margin-left: 78px;
+  margin-right: 50px;
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+  font-family: Raleway, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.lots {
+  padding-top: 180px;
+  width: 1340px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.lots__heading {
+  margin-left: 40px;
+  color: #000;
+  font-family: Raleway;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 27px;
+}
+
+.lots__card-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 25px;
+  min-width: 100%;
+  padding-right: 150px;
+}
+
+.lots__card-list-item {
+  min-width: 430px;
+  min-height: 450px;
+}
+
+.card-link {
+  width: 100%;
+  height: 100%;
+}
+
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+}
+
+.card__title {
+  color: #fff;
+  font-family: Raleway, sans-serif;
+  text-align: left;
+  align-items: center;
+
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  width: 350px;
+  margin-left: 40px;
+  margin-top: 50px;
+}
+
+.card__text {
+  padding-left: 40px;
+  padding-bottom: 50px;
+  padding-right: 40px;
+  color: #fff;
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.card_type_film {
+  background-image: url(/Users/Fed/dev/ono-tebe-nado/images/card-lot-01.jpg);
+}
+
+.card-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.lots__look-more-link {
+  margin-top: 33px;
+  margin-left: 40px;
+  color: #000;
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: underline;
+}
+
+.overlay {
+  width: 100%;
+  min-height: 450px;
+  max-width: 430px;
+  background-color: rgb(0 0 0/0.6);
+  z-index: 1;
+  margin: auto;
+}
+
+.card_type_book {
+  background-image: url(/Users/Fed/dev/ono-tebe-nado/images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+  background-image: url(/Users/Fed/dev/ono-tebe-nado/images/card-lot-03.jpg);
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1340px;
+  height: 487px;
+  margin: auto;
+  margin-top: 180px;
+}
+
+.about-conteiner {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1340px;
+  height: 487px;
+}
+
+.about-column {
+  width: 100%;
+  max-width: 430px;
+  min-height: 450px;
+}
+
+.ellipse {
+  width: 100%;
+  max-width: 240px;
+  height: 240px;
+  background-color: #000;
+  border-radius: 50%;
+  margin-left: 95px;
+}
+
+.about__logo-image {
+  margin-top: 62px;
+  height: 114px;
+}
+
+.about-tittle {
+  color: #000;
+  font-family: Raleway;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.conteiner-tittle-text {
+  margin-left: 212px;
+  margin-top: 100px;
+  width: 100%;
+  max-width: 885px;
+  height: 387;
+}
+
+.about__text {
+  color: #000;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.text-conteiner {
+  margin-top: 100px;
+  margin-bottom: 25px;
+  width: 100%;
+  max-width: 885px;
+}
+
+.footer-menu {
+  height: 100%;
+  display: flex;
+  width: 100%;
+  max-width: 1340px;
+  margin: auto;
+}
+
+.footer-address {
+  display: flex;
+  line-height: 24.3px;
+  flex-direction: column;
+  align-self: center;
+}
+
+.adress-fot {
+  font-size: 18px;
+  line-height: normal;
+  font-family: "Raleway", "sans-serif";
+}
+
+.footer-links-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 356px;
+}
+
+.footer-links-list-item {
+  padding-right: 32px;
+}
+
+.footer-link {
+  font-size: 18px;
+  font-family: "Raleway", "sans-serif";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer-links-list-item_no-bullit {
+  text-decoration: none;
+}
+
+.footer-logo-image {
+  margin-left: 315px;
+  display: flex;
+  width: 100%;
+  max-width: 98px;
+  height: 100%;
+  max-height: 48px;
+}
+
+.shift {
+  margin-top: 180px;
+}
